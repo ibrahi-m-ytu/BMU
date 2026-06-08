@@ -1,11 +1,30 @@
-<div align="center">
+# BMU Kampüs Derslik Uygulaması
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+## Kurulum (Setup)
+1. `npm install`
+2. `npm run dev` (veya production için `npm start`)
+3. Tarayıcınızda Node server URL'ine gidin. (Eğer lokalde çalıştırıyorsanız http://localhost:3000)
 
-  <h1>Built with AI Studio</h2>
+## Özellikler (Features)
+- Student registration with persistent SQLite storage
+- Excel template download (pre-styled .xlsx)
+- Excel upload with row validation and point awarding
+- Upload history per student
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## API Endpoints
+| Method | Path | Description |
+|--------|------|-------------|
+| POST | /api/auth/register | Register new student |
+| GET  | /api/students/:student_no | Look up existing student |
+| GET  | /api/students/:id/uploads | Get student upload history |
+| GET  | /api/classrooms/template | Download Excel template |
+| POST | /api/classrooms/upload | Upload filled Excel file |
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Database
+SQLite file: bmu.db (auto-created on first run)
+Tables: students, classrooms, upload_log
 
-</div>
+## Notes
+- The /uploads/ directory is used temporarily during file processing and is auto-cleared.
+- The app is mobile-first, max 480px wide, designed to match the BMU mobile app UI.
+- Geliştirme ortamında Vite + React ve Tailwind CSS ile birlikte arkada SQLite tabanlı Node Express sunucusu çalışmaktadır.
