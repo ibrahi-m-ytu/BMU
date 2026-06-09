@@ -1,6 +1,11 @@
 # BMU Kampüs Derslik Uygulaması
 
-## Kurulum (Setup)
+## Kullanım ve Kurulum (Setup)
+
+Bu link https://bmu-cfsi.onrender.com üzdrinden uygulamayı deneyebilirsiniz. 
+
+OR 
+
 1. `npm install`
 2. `npm run dev` (veya production için `npm start`)
 3. Tarayıcınızda Node server URL'ine gidin. (Eğer lokalde çalıştırıyorsanız http://localhost:3000)
