@@ -2,7 +2,7 @@
 
 ## Kullanım ve Kurulum (Setup)
 
-Bu link https://bmu-cfsi.onrender.com üzdrinden uygulamayı deneyebilirsiniz. 
+Bu link [BMU APP](https://bmu-995586960998.europe-west1.run.app) üzdrinden uygulamayı deneyebilirsiniz. 
 
 OR 
 
